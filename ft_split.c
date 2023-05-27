@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 16:43:31 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/27 19:41:00 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/27 20:25:36 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ static int	get_word_count(char const *str, char c)
 	word_count = 0;
 	if (str[ft_strlen(str) - 1] != c || str[0] == '\0')
 		word_count++;
+	while (*str && *str == c)
+		str++;
 	while (*str)
 	{
 		while (*str && *str != c)
@@ -128,7 +130,7 @@ char	**ft_split(char const *str, char c)
 // 	char	**ans;
 // 	int		i;
 
-// 	str = "      split       this for   me  !       ";
+// 	str = " Tripouille";
 // 	c = ' ';
 // 	ans = ft_split(str, c);
 // 	if (ans)

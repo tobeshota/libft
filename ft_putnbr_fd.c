@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 19:44:15 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/27 13:42:31 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/27 20:24:44 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd('-', fd);
 		lnb *= -1;
 	}
-	if (lnb > 10)
+	if (lnb >= 10)
 	{
 		ft_putnbr_fd(lnb / 10, fd);
 		ft_putnbr_fd(lnb % 10, fd);

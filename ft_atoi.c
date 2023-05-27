@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 13:38:59 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/27 13:39:27 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/27 20:24:10 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,13 +59,10 @@ int	ft_atoi(const char *str)
 	lnb = 0;
 	while (is_space(str))
 		str++;
-	if (*str == '+')
-		str++;
 	if (*str == '-')
-	{
 		sign *= -1;
+	if (*str == '+' || *str == '-')
 		str++;
-	}
 	while (*str >= '0' && *str <= '9')
 	{
 		if (is_overflow(&lnb, str, sign))
@@ -90,5 +87,8 @@ int	ft_atoi(const char *str)
 // 	ft = ft_atoi(str);
 // 	printf("lib: %d\n", lib);
 // 	printf("ft : %d\n", ft);
+
+// 	printf("%d\n", ft_atoi("+-42"));
+// 	printf("%d\n", atoi("+-42"));
 // 	return (0);
 // }
