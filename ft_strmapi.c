@@ -6,12 +6,16 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 18:46:22 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/27 18:47:02 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 16:06:51 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**関数 'f' を文字列 's' の各文字に適用し，
+ * そのインデックスを第1引数に渡して，
+ * 'f' を連続して適用した結果の新しい文字列を作成する
+ */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		index;
