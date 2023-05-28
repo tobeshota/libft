@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 19:44:15 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/27 20:24:44 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 18:25:17 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,11 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(lnb + '0', fd);
 }
 
-// int main(void)
+// int	main(void)
 // {
-// 	int n = -2147483647;
+// 	int	n;
+
+// 	n = -2147483647;
 // 	ft_putnbr_fd(n, 1);
 // 	return (0);
 // }

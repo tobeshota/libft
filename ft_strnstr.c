@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 20:30:38 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/27 18:45:17 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 18:32:21 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 /* 部分文字列 needle が検索された len 文字より少ない文字列 haystack の中で最初に現れる位置を見つける
  * ◾️引数
- * ・検索対象のメモリブロック haystack
- * ・検索文字列             needle
- * ．検索バイト数           len
+ * #1．検索対象のメモリブロック
+ * #2．検索文字列
+ * #3．検索バイト数
  * ◾️返り値
  * ・一致した文字へのポインター（文字列が見つかった場合）
  * ・NULL（文字列が見つからない場合）
@@ -41,6 +41,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 }
 
 // #include <stdio.h>
+
 // int	main(void)
 // {
 // 	const char *haystack = "123456789";

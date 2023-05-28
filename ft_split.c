@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 16:43:31 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/28 12:56:43 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 18:29:12 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,12 +84,10 @@ static int	assign_words(char const *str, char c, char **array, int i)
 
 /**文字列にある各文字に応じて、文字列を分割する
  *
- * 処理手順
+ * ■処理手順
  * 単語数（配列）の数を求める
  * ダブルポインタを確保する
  * 配列に単語を代入し（assign_words）、配列の最後には0を入れる
- *
- * 途中で確保に失敗したら，ft_splitからNULLを返すようにする
  *
  */
 char	**ft_split(char const *str, char c)

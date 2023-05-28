@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobeshota <tobeshota@student.42.fr>        +#+  +:+       +#+        */
+/*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 19:37:41 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/04/28 19:50:21 by tobeshota        ###   ########.fr       */
+/*   Updated: 2023/05/28 18:32:53 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int	ft_toupper(int c)
 }
 
 // #include <stdio.h>
+
 // int main(void)
 // {
 // 	char c;

@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 19:42:08 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/27 19:42:10 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 18:30:36 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,7 @@ static char	*ft_strcpy(char *dest, const char *src)
 	return (dest);
 }
 
-/* Allocates (with malloc(3)) and returns a new string,
- * which is the result of the concatenation of ’s1’ and ’s2’.
- *
- * Copy s1 to joined_str
- * Copy s2 to joined_str
- * Add null terminator
- *
- */
+// 文字列を連結する
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*result;
@@ -55,6 +48,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 }
 
 // #include <stdio.h>
+
 // int main(void)
 // {
 // 	char *s1 = "Hello";

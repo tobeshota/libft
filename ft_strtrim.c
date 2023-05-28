@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 17:43:35 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/27 18:38:59 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 18:32:38 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,9 +67,6 @@ static size_t	get_end_len(char const *s1, char const *set)
  * 戻り値="AAA"
  *
  */
-// 文字列 *s1 の先頭から*set で指定された文字が削除されたコピーを返す
-// 文字列 *s1 の末尾から*set で指定された文字が削除されたコピーを返す
-// start_resultとend_resultをstrjoinでがっちゃんこする
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start_len;
@@ -99,6 +96,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 
 // #include <stdio.h>
+
 // int main(void)
 // {
 //     // char *s1 = "    hello world     ";

@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobeshota <tobeshota@student.42.fr>        +#+  +:+       +#+        */
+/*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 19:47:16 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/19 21:21:45 by tobeshota        ###   ########.fr       */
+/*   Updated: 2023/05/28 18:31:10 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 //  二つの文字列をn文字まで比べる
-// The comparison is done using unsigned character
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
