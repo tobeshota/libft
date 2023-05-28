@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 13:49:12 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/28 18:23:04 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 18:52:26 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,8 @@ int	ft_lstsize(t_list *lst)
 	int		count;
 	t_list	*ptr;
 
-	if (lst == NULL)
-		return (0);
 	count = 0;
 	ptr = lst;
-	if (ptr->next == NULL)
-		return (1);
 	while (ptr != NULL)
 	{
 		ptr = ptr->next;

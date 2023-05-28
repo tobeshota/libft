@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobeshota <tobeshota@student.42.fr>        +#+  +:+       +#+        */
+/*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 19:58:19 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/19 17:57:27 by tobeshota        ###   ########.fr       */
+/*   Updated: 2023/05/28 19:02:15 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ static void	*ft_memrcpy(void *dest, void *src, size_t len)
 		len--;
 		ptr_dest[len] = ptr_src[len];
 	}
-	*ptr_dest-- = *ptr_src--;
 	return (dest);
 }
 
@@ -42,6 +41,7 @@ void	*ft_memmove(void *dest, void *src, size_t len)
 }
 
 // #include <stdio.h>
+
 // int main(void)
 // {
 // 	char *src = malloc(100);

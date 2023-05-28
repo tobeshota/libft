@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 15:22:20 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/28 18:23:21 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 18:55:10 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		return ;
 	while (*lst != NULL)
 	{
-		temp = *lst;
+		temp = (*lst)->next;
 		ft_lstdelone(*lst, del);
-		*lst = temp->next;
+		*lst = temp;
 	}
 }

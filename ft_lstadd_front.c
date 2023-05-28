@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 12:58:30 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/28 18:23:25 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 19:05:36 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,8 @@
  */
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (lst && new)
-	{
-		new->next = *lst;
-		*lst = new;
-	}
+	if (lst == NULL || new == NULL)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }

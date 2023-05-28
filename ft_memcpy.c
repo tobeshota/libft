@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobeshota <tobeshota@student.42.fr>        +#+  +:+       +#+        */
+/*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 20:22:40 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/09 19:59:33 by tobeshota        ###   ########.fr       */
+/*   Updated: 2023/05/28 19:09:32 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 // メモリー領域 src の先頭 src_n バイトを メモリー領域 dest にコピーする
+// dest かつ src が NULL のとき，dest を返す
 void	*ft_memcpy(void *dest, const void *src, size_t src_n)
 {
 	char	*p_dest;

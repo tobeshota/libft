@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 16:15:07 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/27 13:40:15 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 19:03:11 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void	*ft_calloc(size_t count, size_t size)
 }
 
 // #include <stdio.h>
+
 // int main(void)
 // {
 // 	printf("lib: %p\n", calloc(0, 0));

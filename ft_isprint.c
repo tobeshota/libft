@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobeshota <tobeshota@student.42.fr>        +#+  +:+       +#+        */
+/*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 19:32:37 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/19 17:01:48 by tobeshota        ###   ########.fr       */
+/*   Updated: 2023/05/28 19:03:59 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ int	ft_isprint(int c)
 
 // #include <stdio.h>
 // #include <ctype.h>
+
 // int main(void)
 // {
 // 	for(int i = -256; i < 256; i++)

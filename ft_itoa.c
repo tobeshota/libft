@@ -6,12 +6,11 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 17:18:52 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/27 18:08:01 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 19:04:47 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static size_t	get_digits(int n)
 {
@@ -54,7 +53,8 @@ char	*ft_itoa(int n)
 	return (result);
 }
 
-// #include <unistd.h>
+// #include <stdio.h>
+
 // int	main(void)
 // {
 // 	// int		n = 500;

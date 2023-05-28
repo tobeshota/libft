@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 16:43:31 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/28 18:29:12 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 19:06:48 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,7 +119,6 @@ char	**ft_split(char const *str, char c)
 }
 
 // #include <stdio.h>
-// #include <stdlib.h>
 
 // int	main(void)
 // {

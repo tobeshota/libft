@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 13:38:59 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/27 20:24:10 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/28 19:03:00 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ int	ft_atoi(const char *str)
 }
 
 // #include <stdio.h>
-// #include <limits.h>
+
 // int	main(void)
 // {
 // 	const char	*str;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobeshota <tobeshota@student.42.fr>        +#+  +:+       +#+        */
+/*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 19:18:45 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/19 16:13:51 by tobeshota        ###   ########.fr       */
+/*   Updated: 2023/05/28 19:03:53 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int	ft_isascii(int c)
 
 // #include <stdio.h>
 // #include <ctype.h>
-// #include <limits.h>
 
 // int main(void)
 // {
