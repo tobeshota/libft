@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 13:38:59 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/28 19:03:00 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/29 19:59:49 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int	ft_atoi(const char *str)
 		sign *= -1;
 	if (*str == '+' || *str == '-')
 		str++;
-	while (*str >= '0' && *str <= '9')
+	while (ft_isdigit(*str))
 	{
 		if (is_overflow(&lnb, str, sign))
 			break ;

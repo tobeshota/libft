@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 15:10:26 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/27 20:26:00 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/29 18:46:06 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,12 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	dest[i] = '\0';
 	return (src_len);
 }
+
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	char *src = "hoge";
+// 	printf("%zu\n", ft_strlcpy(NULL, src, 4));
+// 	printf("%lu\n", strlcpy(NULL, src, 4));
+// }

@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 19:38:45 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/27 19:36:35 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/29 18:46:31 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // destからsrcに文字列をコピーする
 static char	*ft_strcpy(char *dest, const char *src)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (src[i])
@@ -31,10 +31,8 @@ static char	*ft_strcpy(char *dest, const char *src)
 char	*ft_strdup(const char *src)
 {
 	char	*dest;
-	int		slen;
 
-	slen = ft_strlen(src);
-	dest = (char *)malloc(sizeof(char) * (slen + 1));
+	dest = (char *)malloc(sizeof(char) * (ft_strlen(src) + 1));
 	if (dest == NULL)
 		return (NULL);
 	ft_strcpy(dest, src);
@@ -48,6 +46,7 @@ char *の動的配列を確保したい == char の集まりをslen + 1 ぶん�
 */
 
 // #include <stdio.h>
+
 // int	main(void)
 // {
 // 	char *src;

@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 19:42:08 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/28 18:30:36 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/29 15:49:06 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,19 +31,18 @@ static char	*ft_strcpy(char *dest, const char *src)
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*result;
-	char	*ptr;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 		return (NULL);
+	if (s1 == NULL)
+		return (ft_strdup(s2));
+	if (s2 == NULL)
+		return (ft_strdup(s1));
 	result = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (result == NULL)
 		return (NULL);
-	ptr = result;
-	ft_strcpy(ptr, s1);
-	ptr += ft_strlen(s1);
-	ft_strcpy(ptr, s2);
-	ptr += ft_strlen(s2);
-	*ptr = '\0';
+	ft_strcpy(result, s1);
+	ft_strcpy(result + ft_strlen(s1), s2);
 	return (result);
 }
 
@@ -51,7 +50,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 // int main(void)
 // {
-// 	char *s1 = "Hello";
+// 	char *s1 = "Hello ";
 // 	char *s2 = "World";
 // 	char *s3 = ft_strjoin(s1, s2);
 // 	printf("%s\n", s3);

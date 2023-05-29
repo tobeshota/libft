@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 19:58:19 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/28 19:02:15 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/29 19:24:54 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ static void	*ft_memrcpy(void *dest, void *src, size_t len)
 	return (dest);
 }
 
+// memoveは，destとsrcの領域が重なっているときに，src の領域が上書きされないようにコピーする
+// memcpyは，destとsrcの領域が重なっているときに，src の領域が上書きされてしまう
 void	*ft_memmove(void *dest, void *src, size_t len)
 {
 	if (dest == NULL && src == NULL)

@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 17:43:35 by toshota           #+#    #+#             */
-/*   Updated: 2023/05/28 18:32:38 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/29 20:01:38 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	i;
 
 	if (s1 == NULL || set == NULL)
-		return (0);
+		return (NULL);
 	start_len = get_start_len(s1, set);
 	end_len = get_end_len(s1, set);
 	if (start_len > end_len)

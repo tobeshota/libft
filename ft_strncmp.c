@@ -6,7 +6,7 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 19:47:16 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/28 18:31:10 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/29 11:52:07 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 // int main(void)
 // {
-// 	char *s1 = "libft-test-tokyo";
+// 	char *s1 = "libft-";
 // 	char *s2 = calloc(10, 1);
 
 // 	strlcpy(s2, "libft", 10);
