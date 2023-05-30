@@ -6,40 +6,35 @@
 /*   By: toshota <toshota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 19:58:19 by tobeshota         #+#    #+#             */
-/*   Updated: 2023/05/29 19:24:54 by toshota          ###   ########.fr       */
+/*   Updated: 2023/05/30 20:14:58 by toshota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	*ft_memrcpy(void *dest, void *src, size_t len)
-{
-	char	*ptr_dest;
-	char	*ptr_src;
-
-	if ((dest == NULL && src == NULL) || len == 0)
-		return (dest);
-	ptr_dest = (char *)dest;
-	ptr_src = (char *)src;
-	while (len > 0)
-	{
-		len--;
-		ptr_dest[len] = ptr_src[len];
-	}
-	return (dest);
-}
-
+// src の len バイトを dest にコピーする
 // memoveは，destとsrcの領域が重なっているときに，src の領域が上書きされないようにコピーする
 // memcpyは，destとsrcの領域が重なっているときに，src の領域が上書きされてしまう
 void	*ft_memmove(void *dest, void *src, size_t len)
 {
-	if (dest == NULL && src == NULL)
-		return (NULL);
+	void	*dest_ptr;
+
+	if (dest == src || len == 0)
+		return (dest);
+	dest_ptr = dest;
 	if (dest < src)
-		ft_memcpy(dest, src, len);
+	{
+		while (len--)
+			*(unsigned char *)dest++ = *(unsigned char *)src++;
+	}
 	else
-		ft_memrcpy(dest, src, len);
-	return (dest);
+	{
+		dest += len - 1;
+		src += len - 1;
+		while (len--)
+			*(unsigned char *)dest-- = *(unsigned char *)src--;
+	}
+	return (dest_ptr);
 }
 
 // #include <stdio.h>
